@@ -4,13 +4,19 @@
 coordinates = (4, 5)  # can't change and don't modify the list
 print(coordinates[0])  # select specific index
 
+
 # Basic Function Tutorial
 # coordinates[1] = 10  # TypeError: 'tuple' object does not support item assignment
 # print(coordinates)  # tuples is immutable because you can't change the list
 
-# def means function in python, the function must be inside the indent funtion
+# def means function in python, the function must be inside the indent function
+print("----------------")
+print("-- Basic Function Tutorial--")
+
+
 def hello_world():
-    print("Hello user")
+    name = input("Enter your name : ")
+    print("Hello " + name)
     your_feeling = input("Are you feeling well today? : ")
     print(your_feeling + ", Wow that's great!")
 
@@ -33,3 +39,16 @@ def the_function2(name, age):
 
 
 the_function2("IOs", 11)
+
+print("----------------")
+print("-- Return Statement Tutorial--")
+
+
+def cube(num):
+    return num * num * num
+
+
+print(cube(3))
+result = cube(4)
+print(result)
+
